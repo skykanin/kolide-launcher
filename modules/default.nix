@@ -76,7 +76,7 @@ in {
       description = "Kolide launcher";
       documentation = [ "https://www.kolide.com/" ];
 
-      after = [ "network-online.target" ];
+      wants = [ "network-online.target" ];
       wantedBy = [ "multi-user.target" ];
 
       serviceConfig = {
